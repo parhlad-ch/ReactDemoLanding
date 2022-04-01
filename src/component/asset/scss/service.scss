@@ -1,0 +1,226 @@
+.instructor-section {
+	position: relative;
+	.background-layer {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background-position: center top;
+		background-repeat: repeat-x;
+	}
+	.background-layer-one {
+		position: absolute;
+		left: 0px;
+		top: 140px;
+		width: 620px;
+		height: 120px;
+		background-position: center top;
+		background-repeat: repeat-x;
+	}
+	.background-layer-two {
+		position: absolute;
+		right: 300px;
+		top: 60px;
+		width: 774px;
+		height: 416px;
+		background-position: center top;
+		background-repeat: repeat-x;
+	}
+	.blocks-column {
+		position: relative;
+		margin-bottom: 40px;
+		.inner-column {
+			position: relative;
+			padding: 140px 0px 40px;
+		}
+	}
+	.instructor-column {
+		position: relative;
+		margin-bottom: 40px;
+		.inner-column {
+			position: relative;
+			padding: 40px 35px;
+			background-color: #ffffff;
+			outline: 2px dashed #acd9c2;
+			outline-offset: -12px;
+			box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
+		}
+		h4 {
+			position: relative;
+			color: #06092d;
+			font-weight: 700;
+			line-height: 1.3em;
+			margin-bottom: 20px;
+		}
+		p {
+			position: relative;
+			color: #06092d;
+			font-size: 16px;
+			opacity: 0.90;
+			line-height: 1.7em;
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		.click-here {
+			position: relative;
+			color: #86bc24;
+			font-size: 16px;
+			margin-top: 5px;
+			font-weight: 500;
+			margin-bottom: 20px;
+			display: inline-block;
+			border-bottom: 1px solid #86bc24;
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			&:hover {
+				color: #111111;
+				border-color: #111111;
+			}
+		}
+	}
+}
+.service-block {
+	position: relative;
+	z-index: 1;
+	.inner-box {
+		position: relative;
+		padding: 50px 30px;
+		margin-left: 10px;
+		.border-layer {
+			position: absolute;
+			left: -12px;
+			top: 0px;
+			z-index: -1;
+			width: 32px;
+			bottom: 30px;
+			border: 4px solid #06092d;
+			-ms-transform: skewY(20deg);
+			transform: skewY(20deg);
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+		}
+		&:hover {
+			.border-layer {
+				border-color: #49bc60;
+				-ms-transform: skewY(-20deg);
+				transform: skewY(-20deg);
+			}
+			&::before {
+				box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
+			}
+			.icon-box {
+				-webkit-transform: scale(-1) rotate(180deg);
+				-moz-transform: scale(-1) rotate(180deg);
+				-ms-transform: scale(-1) rotate(180deg);
+				-o-transform: scale(-1) rotate(180deg);
+				transform: scale(-1) rotate(180deg);
+			}
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			left: 0px;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			background-color: #ffffff;
+			-ms-transform: skewY(4deg);
+			transform: skewY(4deg);
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+		}
+		.icon-box {
+			position: relative;
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			transition: all 500ms ease;
+			-moz-transition: all 500ms ease;
+			-webkit-transition: all 500ms ease;
+			-ms-transition: all 500ms ease;
+			-o-transition: all 500ms ease;
+			&:before {
+				position: absolute;
+				content: '';
+				left: 0px;
+				top: 0px;
+				right: 0px;
+				bottom: 0px;
+				-ms-transform: skewX(3deg);
+				transform: skewX(3deg);
+			}
+			.icon {
+				position: relative;
+				width: 55px;
+				height: 55px;
+				color: #ffffff;
+				font-size: 28px;
+				margin-top: 10px;
+				margin-left: 10px;
+				line-height: 55px;
+				text-align: center;
+				border-radius: 50%;
+				display: inline-block;
+				background-color: #49bc60;
+			}
+		}
+		h4 {
+			position: relative;
+			font-weight: 500;
+			line-height: 1.3em;
+			margin-top: 30px;
+			margin-bottom: 18px;
+			a {
+				position: relative;
+				color: #06092d;
+				transition: all 500ms ease;
+				-moz-transition: all 500ms ease;
+				-webkit-transition: all 500ms ease;
+				-ms-transition: all 500ms ease;
+				-o-transition: all 500ms ease;
+				&:hover {
+					color: #49bc60;
+				}
+			}
+		}
+		.text {
+			position: relative;
+			color: #06092d;
+			font-size: 16px;
+			line-height: 1.8em;
+		}
+	}
+	&:nth-child(2) {
+		.inner-box {
+			.icon-box {
+				.icon {
+					background-color: #f8c333;
+				}
+			}
+			&:hover {
+				.border-layer {
+					border-color: #f8c333;
+				}
+			}
+			h4 {
+				a {
+					&:hover {
+						color: #f8c333;
+					}
+				}
+			}
+		}
+	}
+}

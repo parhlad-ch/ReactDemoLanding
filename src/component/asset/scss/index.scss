@@ -1,0 +1,40 @@
+
+/***************************
+ (Master Stylesheet)
+Theme Name: Aspl - Agency and  Portfolio HTML5 Template
+Author: info@annexlogics.com
+Support: info@annexlogics.com 
+Description: Agency Portfolio HTML5 template. 
+Version: 1.0 
+
+**********************************************/
+
+/************ CSS INDEX ***************
+1. Fonts
+2. NavBaar
+3. banner
+4. Development Service
+5. Process  
+6. Banner Service
+7. About Us 
+8. Why Choose Service 
+9. Technology
+10. Contact Us 
+11. Footer
+
+**********************************************/
+
+@import './navBar';
+@import './service';
+@import './banner';
+@import './developmentService';
+@import './servicesTechnology';
+@import './contactUs';
+@import './common';
+@import './footer';
+
+
+
+
+
+
